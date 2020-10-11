@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tbody>
+        <tr>
+            <th>beautyname</th>
+            <th>beauty</th>
+            <th>url</th>
+        </tr>
+        {% for b in blist  %}
+        <tr>
+            <td>{{b.beauty_name}}</td>
+            <td>{{b.beauty}}</td>
+<!--            <th><img src="{%raw b.url %}"></th>-->
+            <td>{{b.url}}</td>
+        </tr>
+        {% end %}
+        </tbody>
+
+    </table>
+    <div><a href="{{pre_url}}">上一页</a><a href="{{next_url}}">下一页</a></div>
+
+</body>
+</html>
